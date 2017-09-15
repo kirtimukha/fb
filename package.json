@@ -1,0 +1,24 @@
+{
+  "name": "fb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirtimukha/fb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirtimukha/fb/issues"
+  },
+  "homepage": "https://github.com/kirtimukha/fb#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

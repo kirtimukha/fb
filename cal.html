@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, intitial-scale=1" />
+<meta http-equiv="X-UA-Compativle" content="ie=edge" />
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="contene-language" content="ko">
+<meta http-equiv="content-style-type" content="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<!-- SEO -->
+<title></title>
+<link href="/css/cal.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+  //클릭시 li > a 의 텍스트 얻기
+  $('a').click(funtion(){
+
+    var cnt = 0;
+    var getObj = $('a').html();
+    var temp;
+    var showObj = $('.result').html(getObj);
+    for (var i = 0 ; i <cnt+1 ; i ++){
+      temp =  showObj  +  getObj
+    }
+
+  });
+
+  //여러번 누르면 텍스트 합치기
+  // = 을 누르면  문자의 공백을 제거하기
+
+  //백스페이스 누르면 끝 문자 하나 삭제하기
+  //클리어 누르면 전체 삭제하기
+  // + , - 문자 제일 왼쪽 숫자부터 계산하기
+});
+</script>
+</head>
+<body>
+  <dic id="wrap">
+    <div id="result">
+
+    </div>
+    <div class="cal">
+      <ul>
+        <li><a href="javascript:void(0);">1</a></li>
+        <li><a href="javascript:void(0);">2</a></li>
+        <li><a href="javascript:void(0);">3</a></li>
+        <li><a href="javascript:void(0);">4</a></li>
+        <li><a href="javascript:void(0);">5</a></li>
+        <li><a href="javascript:void(0);">6</a></li>
+        <li><a href="javascript:void(0);">7</a></li>
+        <li><a href="javascript:void(0);">8</a></li>
+        <li><a href="javascript:void(0);">8</a></li>
+        <li><a href="javascript:void(0);">9</a></li>
+        <li><a href="javascript:void(0);">+</a></li>
+        <li><a href="javascript:void(0);">-</a></li>
+        <li><a href="javascript:void(0);">=</a></li>
+        <li><a href="javascript:void(0);">clr</a></li>
+        <li><a href="javascript:void(0);">back</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</body>
+</html>
